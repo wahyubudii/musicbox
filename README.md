@@ -41,10 +41,10 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project!
 <p align="center">
-<img src="https://user-images.githubusercontent.com/79882296/164763358-e7237ae6-6f7e-4340-836f-5f44df42a161.jpg" width="500px" height="auto"></img>
-<img src="https://user-images.githubusercontent.com/79882296/164763357-9a2545be-ac6e-40fb-952d-3cc86704d1cc.jpg" width="500px" height="auto"></img>
-<img src="https://user-images.githubusercontent.com/79882296/164763354-7a437726-8d3b-4149-aaed-4ca0a7b5e12e.jpg" width="500px" height="auto"></img>
-<img src="https://user-images.githubusercontent.com/79882296/164763499-6a90f2f1-ccdb-440b-804a-6bf3435574f0.jpg" width="500px" height="auto"></img>
+<img src="https://user-images.githubusercontent.com/79882296/164763358-e7237ae6-6f7e-4340-836f-5f44df42a161.jpg" height="auto"></img>
+<img src="https://user-images.githubusercontent.com/79882296/164763357-9a2545be-ac6e-40fb-952d-3cc86704d1cc.jpg" height="auto"></img>
+<img src="https://user-images.githubusercontent.com/79882296/164763354-7a437726-8d3b-4149-aaed-4ca0a7b5e12e.jpg" height="auto"></img>
+<img src="https://user-images.githubusercontent.com/79882296/164763499-6a90f2f1-ccdb-440b-804a-6bf3435574f0.jpg" height="auto"></img>
 </p>
 Musicbox is a platform for searching and listening to music. This platform is integrated with the spotify API, so when accessing the platform, it is expected that you first register a spotify account on the official platform if you don't have a spotify account before. And for those of you who already have a spotify account, you can login with that account.
 
