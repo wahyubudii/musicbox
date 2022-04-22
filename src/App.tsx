@@ -8,7 +8,6 @@ import { setToken } from "./features/authorization"
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom"
 import CreatePlaylistPage from "./pages/CreatePlaylist";
 import { AppDispatch, RootState } from "./store";
-import Homepage from "./pages/Homepage";
 
 function App() {
   const dispatch = useDispatch<AppDispatch>()
@@ -17,8 +16,6 @@ function App() {
   useEffect(() => {
     const hash = window.location.hash;
     let token = window.localStorage.getItem("token") || "";
-
-    document.title = "Homework 15 || Spotify"
 
     if (!token && hash) {
       token = hash.substring(1).split("&").find((elem) => elem.startsWith("access_token"))?.split("=")[1]!;

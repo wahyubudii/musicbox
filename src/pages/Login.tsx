@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 
 function Login() {
   const CLIENT_ID = process.env.REACT_APP_CLIENT_ID;
   const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize";
-  const REDIRECT_URL = "http://localhost:3000/";
+  const REDIRECT_URL = "https://musicbox.vercel.app/";
 
   const SPACE_DELIMITER = "%20";
   const SCOPES = ["playlist-modify-private", "playlist-read-private", "user-top-read"];
