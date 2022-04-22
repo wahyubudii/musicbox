@@ -1,0 +1,219 @@
+/* THIS STYLE FOR HOMEPAGE WITHOUT CSS FRAMEWORK */
+
+main {
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.containers {
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.red {
+    background-color: red;
+}
+
+.text-white {
+    color: white;
+}
+
+.align-center {
+    align-items: flex-end;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.text-centers {
+    text-align: center;
+}
+
+.display-flex {
+    display: flex;
+}
+
+section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.search-section {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(31 41 55);
+    color: rgb(209 213 219);
+    width: 400px;
+}
+
+.search-form {
+    display: flex;
+    margin: 0 0.8rem;
+    align-items: center;
+}
+
+.search-icon {
+    margin-right: 0.2rem;
+    height: 18px;
+    width: 18px;
+}
+
+.search-field {
+    width: 100%;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 0.3rem 0;
+    background-color: rgb(31 41 55);
+    outline-width: 0px;
+    font-size: 14px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1.5rem;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+}
+
+.song-item {
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: rgb(107 114 128);
+    font-size: 14px;
+    padding: 0.5rem 0.5rem;
+}
+
+.song-item:hover {
+    background-color: rgb(17 24 39);
+}
+
+.song-description {
+    display: flex;
+    align-items: center;
+}
+
+.song-image {
+    height: 150px;
+    width: 150px;
+}
+
+.song-details {
+    padding-left: 1rem;
+}
+
+.hover-active:hover {
+    color: rgb(21 128 61);
+}
+
+.song-details p {
+    /* overflow: hidden; */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-top: 0.1rem;
+}
+
+.select-button-green {
+    margin-top: 1rem;
+    padding: 0.5rem 1.5rem;
+    color: white;
+    border-radius: 50px;
+    background-color: rgb(21 128 61);
+}
+
+.select-button-red {
+    margin-top: 1rem;
+    padding: 0.5rem 1.5rem;
+    color: white;
+    border-radius: 50px;
+    background-color: rgb(167, 15, 15);
+}
+
+.select-button-green:hover {
+    color: white;
+    background-color: rgb(22 101 52);
+}
+
+.select-button-red:hover {
+    color: white;
+    background-color: rgb(124, 11, 11);
+}
+
+.no-found-tracks {
+    color: rgb(107 114 128);
+}
+
+@media screen and (max-width: 1024px) {
+    .containers {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .containers {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+    section {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .song-image {
+        height: 105px;
+        width: 105px;
+    }
+
+    .song-details p {
+        font-size: 12px;
+    }
+
+    .select-button-green, .select-button-red {
+        margin-top: 0.5rem;
+        padding: 0.2rem 1.0rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .containers {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .search-section {
+        width: 350px;
+    }
+
+    section {
+        display: flex;
+        justify-content: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .grid-container {
+        grid-template-columns: auto;
+    }
+
+    .grid-song {
+        width: 350px;
+    }
+
+    .select-button-green, .select-button-red {
+        margin-top: 0.3rem;
+        font-size: 12px;
+    }
+
+    .search-section {
+        margin-top: 4rem;
+    }
+}
