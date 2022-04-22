@@ -1,8 +1,6 @@
 import { shuffle } from "lodash";
 import { useEffect, useState } from "react";
-import {  useSelector } from "react-redux";
 import Header from "../Header";
-import {  RootState } from "../../store";
 import Release from "../Release";
 import TopTracks from "../TopItems/TopTracks";
 import TopArtists from "../TopItems/TopArtists";
@@ -28,13 +26,9 @@ const colors = [
 export default function Center() {
   const [color, setColor] = useState<any>(null);
 
-  const { topArtists } = useSelector((state: RootState) => state.topItems)
-  const { topTracks } = useSelector((state: RootState) => state.topItems)
-
   useEffect(() => {
     setColor(shuffle(colors).pop())
   }, []);
-
 
   return (
     <div className="flex-grow h-screen overflow-y-scroll scrollbar-hide responsive pb-32">
@@ -44,12 +38,8 @@ export default function Center() {
         <Release />
       </section>
 
-      { topArtists.length !== 0 && (
-        <>
-          <TopTracks />
-          <TopArtists />
-        </>
-      )}
+      <TopArtists />
+      <TopTracks />
 
     </div>
   );
