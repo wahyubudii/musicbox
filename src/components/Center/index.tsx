@@ -1,13 +1,8 @@
-import { SearchIcon } from "@heroicons/react/outline";
 import { shuffle } from "lodash";
 import { useEffect, useState } from "react";
-import axios from "axios";
 import {  useSelector } from "react-redux";
 import Header from "../Header";
 import {  RootState } from "../../store";
-import { ResponseTracks } from "../../models/Tracks";
-import { ResponseArtists } from "../../models/Artists";
-import { BASE_URL } from "../../config/urlApi";
 import Release from "../Release";
 import TopTracks from "../TopItems/TopTracks";
 import TopArtists from "../TopItems/TopArtists";
@@ -31,15 +26,15 @@ const colors = [
 ];
 
 export default function Center() {
-  const { token } = useSelector((state: RootState) => state.token)
   const [color, setColor] = useState<any>(null);
-  const [searchKey, setSearchKey] = useState("");
-  const [artists, setArtists] = useState<ResponseArtists>([]);
-  const [tracks, setTracks] = useState<ResponseTracks>([]);
+
+  const { topArtists } = useSelector((state: RootState) => state.topItems)
+  const { topTracks } = useSelector((state: RootState) => state.topItems)
 
   useEffect(() => {
     setColor(shuffle(colors).pop())
   }, []);
+
 
   return (
     <div className="flex-grow h-screen overflow-y-scroll scrollbar-hide responsive pb-32">
@@ -49,8 +44,13 @@ export default function Center() {
         <Release />
       </section>
 
-      <TopTracks />
-      <TopArtists />
+      { topArtists.length !== 0 && (
+        <>
+          <TopTracks />
+          <TopArtists />
+        </>
+      )}
+
     </div>
   );
 }

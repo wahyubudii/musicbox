@@ -13,7 +13,7 @@ const store = configureStore<any>({
         tracks: tracksSlice,
         playlists: playlisstSlice,
         releases: releaseSlices,
-        topItems: topItemsSlices
+        topItems: topItemsSlices,
     }
 })
 

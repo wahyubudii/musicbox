@@ -6,10 +6,6 @@ import data from '../../data/longData'
 function Player() {
   const [volume, setVolume] = useState(50)
 
-  const handlePlay = () => {
-      console.log("Selected")
-  }
-
   return (
     <div className='h-24 bg-gradient-to-b from-black to-gray-900 text-white grid grid-cols-3 text-xs md:text-base px-2 md:px-8'>
         {/* Left */}
@@ -25,7 +21,7 @@ function Player() {
         <div className='flex items-center justify-evenly'>
             <SwitchHorizontalIcon className='button' />
             <RewindIcon className='button' />
-            <PauseIcon className='button w-10 h-10 hover:text-green-400' onClick={handlePlay}/>
+            <PauseIcon className='button w-10 h-10 hover:text-green-400'/>
             <FastForwardIcon className='button' />
             <ReplyIcon className='button' />
         </div>

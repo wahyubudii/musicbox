@@ -31,8 +31,6 @@ export default function TopArtists() {
     }
   }
 
-  console.log(topArtists)
-
   return (
     <div className="flex justify-items-start text-white">
         <div className="p-8 pt-12">
